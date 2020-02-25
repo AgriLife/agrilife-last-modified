@@ -1,0 +1,26 @@
+{
+  "name": "agrilife-last-modified",
+  "version": "1.0.0",
+  "description": "WordPress plugin to add last-modified meta to head.",
+  "main": "agrilife-last-modified.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgriLife/agrilife-last-modified.git"
+  },
+  "author": "Zachary Watkins",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/AgriLife/agrilife-last-modified/issues"
+  },
+  "homepage": "https://github.com/AgriLife/agrilife-last-modified#readme",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie > 9"
+  ]
+}
