@@ -1,6 +1,6 @@
 {
   "name": "agrilife-last-modified",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WordPress plugin to add last-modified meta to head.",
   "main": "agrilife-last-modified.php",
   "scripts": {

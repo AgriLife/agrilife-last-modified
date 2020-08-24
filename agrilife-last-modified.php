@@ -24,21 +24,25 @@ add_action( 'wp_head', function(){
 
 	global $post;
 
-	$meta = sprintf(
-		'<meta name="last-modified" content="%s" />',
-		str_replace( ' ', 'T', $post->post_modified )
-	);
+	if ( ! empty( $post ) ) {
 
-	$output = wp_kses(
-		$meta,
-		array(
-			'meta' => array(
-				'name'    => true,
-				'content' => true,
+		$meta = sprintf(
+			'<meta name="last-modified" content="%s" />',
+			str_replace( ' ', 'T', $post->post_modified )
+		);
+
+		$output = wp_kses(
+			$meta,
+			array(
+				'meta' => array(
+					'name'    => true,
+					'content' => true,
+				)
 			)
-		)
-	);
+		);
 
-	echo $output;
+		echo $output;
+
+	}
 
 });
